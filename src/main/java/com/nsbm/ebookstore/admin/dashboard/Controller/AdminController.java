@@ -37,8 +37,14 @@ public class AdminController {
     public ResponseEntity<Users> updateUser(@PathVariable("id") Long id, @RequestBody Users user) {
         Users existingUser = adminService.getUserById(id);
         if (existingUser != null) {
-            user.setUserid(id);
-            Users updatedUser = adminService.saveUser(user);
+            // Update fields other than password
+            existingUser.setEmail(user.getEmail());
+            // Check if the password is provided in the request
+            if (user.getPassword() != null && !user.getPassword().isEmpty()) {
+                existingUser.setPassword(user.getPassword());
+            }
+            existingUser.setUserid(id); // Convert Long to Integer if necessary
+            Users updatedUser = adminService.saveUser(existingUser);
             return new ResponseEntity<>(updatedUser, HttpStatus.OK);
         } else {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
