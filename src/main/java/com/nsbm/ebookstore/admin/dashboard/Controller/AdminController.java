@@ -26,6 +26,7 @@ public class AdminController {
         return ResponseEntity.ok(adminUsers);
     }
 
+
     @GetMapping(ID_PARAM)
     public ResponseEntity<DashboardUsers> getUserById(@PathVariable("id") Long id) {
         DashboardUsers user = adminService.getUserById(id);

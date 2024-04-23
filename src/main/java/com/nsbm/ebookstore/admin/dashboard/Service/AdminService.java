@@ -10,4 +10,5 @@ public interface AdminService {
     DashboardUsers saveUser(DashboardUsers user);
     boolean deleteUser(Long id);
     List<DashboardUsers> getAdminUsers();
+
 }

@@ -8,6 +8,6 @@ import java.util.List;
 
 public interface AdminRepository extends JpaRepository<DashboardUsers, Long> {
 
-    @Query("SELECT u FROM DashboardUsers u WHERE u.role = ?1")
-    List<DashboardUsers> findByRole(String role);
+    @Query("SELECT u FROM DashboardUsers u WHERE u.role = 'admin'")
+    List<DashboardUsers> findByRole();
 }
