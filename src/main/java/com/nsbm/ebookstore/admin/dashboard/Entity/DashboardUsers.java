@@ -9,7 +9,7 @@ import lombok.Data;
 
 @Entity
 @Data
-public class Users {
+public class DashboardUsers {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long userid;
@@ -69,7 +69,7 @@ public class Users {
     }
 
     // Constructors
-    public Users() {
+    public DashboardUsers() {
     }
 
 }

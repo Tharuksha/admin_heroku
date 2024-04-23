@@ -1,7 +1,7 @@
 package com.nsbm.ebookstore.admin.dashboard.Service;
 
 import com.nsbm.ebookstore.admin.dashboard.Repository.AdminRepository;
-import com.nsbm.ebookstore.admin.dashboard.Entity.Users;
+import com.nsbm.ebookstore.admin.dashboard.Entity.DashboardUsers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,17 +13,17 @@ public class AdminServiceImpl implements AdminService {
     private AdminRepository adminRepository;
 
     @Override
-    public List<Users> getAllUsers() {
+    public List<DashboardUsers> getAllUsers() {
         return adminRepository.findAll();
     }
 
     @Override
-    public Users getUserById(Long id) {
+    public DashboardUsers getUserById(Long id) {
         return adminRepository.findById(id).orElse(null);
     }
 
     @Override
-    public Users saveUser(Users user) {
+    public DashboardUsers saveUser(DashboardUsers user) {
         return adminRepository.save(user);
     }
 
@@ -38,7 +38,7 @@ public class AdminServiceImpl implements AdminService {
     }
 
     @Override
-    public List<Users> getAdminUsers() {
+    public List<DashboardUsers> getAdminUsers() {
         return adminRepository.findByRole("admin");
     }
 }
