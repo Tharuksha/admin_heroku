@@ -1,7 +1,7 @@
-package com.nsbm.ebookstore.book_service.controller;
+package com.nsbm.ebookstore.user.book_service.controller;
 
-import com.nsbm.ebookstore.book_service.model.BookModel;
-import com.nsbm.ebookstore.book_service.service.BookService;
+import com.nsbm.ebookstore.user.book_service.model.BookModel;
+import com.nsbm.ebookstore.user.book_service.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

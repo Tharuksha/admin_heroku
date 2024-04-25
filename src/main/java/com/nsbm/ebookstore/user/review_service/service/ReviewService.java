@@ -1,7 +1,6 @@
-package com.nsbm.ebookstore.user.review.service;
-
-import com.nsbm.ebookstore.user.review.model.ReviewModel;
-import com.nsbm.ebookstore.user.review.repository.ReviewRepository;
+package com.nsbm.ebookstore.user.review_service.service;
+import com.nsbm.ebookstore.user.review_service.model.ReviewModel;
+import com.nsbm.ebookstore.user.review_service.repository.ReviewRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

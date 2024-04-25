@@ -1,10 +1,7 @@
 // OrderService.java
-package com.nsbm.ebookstore.Service;
-
-
-
+package com.nsbm.ebookstore.user.order_service.Service;
 import ch.qos.logback.core.util.Loader;
-import com.nsbm.ebookstore.Model.Order;
+import com.nsbm.ebookstore.user.order_service.Model.Order;
 
 import java.util.List;
 
@@ -17,6 +14,8 @@ public interface OrderService {
     Order getOrderById(Long orderId);// Method to get an order by ID
     List<Order> GetOrdersByBookId(Long book_id);
     List<Order> GetOrdersByUserId(Long userid);
+
+
 
 
 

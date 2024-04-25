@@ -1,7 +1,7 @@
-package com.nsbm.ebookstore.donation.controller;
+package com.nsbm.ebookstore.user.donation_service.controller;
 
-import com.nsbm.ebookstore.donation.model.DonationModel;
-import com.nsbm.ebookstore.donation.service.DonationModelService;
+import com.nsbm.ebookstore.user.donation_service.model.DonationModel;
+import com.nsbm.ebookstore.user.donation_service.service.DonationModelService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

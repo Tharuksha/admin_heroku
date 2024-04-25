@@ -1,7 +1,6 @@
-package com.nsbm.ebookstore.Controller;
-
-import com.nsbm.ebookstore.Model.Order;
-import com.nsbm.ebookstore.Service.OrderService;
+package com.nsbm.ebookstore.user.order_service.Controller;
+import com.nsbm.ebookstore.user.order_service.Model.Order;
+import com.nsbm.ebookstore.user.order_service.Service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

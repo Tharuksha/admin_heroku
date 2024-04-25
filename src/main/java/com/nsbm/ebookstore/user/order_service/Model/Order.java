@@ -1,4 +1,4 @@
-package com.nsbm.ebookstore.Model;
+package com.nsbm.ebookstore.user.order_service.Model;
 
 import jakarta.persistence.*;
 

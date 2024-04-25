@@ -1,6 +1,6 @@
-package com.nsbm.ebookstore.user.review.repository;
+package com.nsbm.ebookstore.user.review_service.repository;
 
-import com.nsbm.ebookstore.user.review.model.ReviewModel;
+import com.nsbm.ebookstore.user.review_service.model.ReviewModel;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

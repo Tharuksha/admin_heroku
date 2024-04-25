@@ -1,7 +1,7 @@
-package com.nsbm.ebookstore.book_service.service;
+package com.nsbm.ebookstore.user.book_service.service;
 
-import com.nsbm.ebookstore.book_service.model.BookModel;
-import com.nsbm.ebookstore.book_service.repository.BookServiceRepository;
+import com.nsbm.ebookstore.user.book_service.model.BookModel;
+import com.nsbm.ebookstore.user.book_service.repository.BookServiceRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

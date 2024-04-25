@@ -1,7 +1,7 @@
-package com.nsbm.ebookstore.user.review.controller;
+package com.nsbm.ebookstore.user.review_service.controller;
 
-import com.nsbm.ebookstore.user.review.model.ReviewModel;
-import com.nsbm.ebookstore.user.review.service.ReviewService;
+import com.nsbm.ebookstore.user.review_service.model.ReviewModel;
+import com.nsbm.ebookstore.user.review_service.service.ReviewService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

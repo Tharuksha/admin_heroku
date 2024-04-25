@@ -1,4 +1,4 @@
-package com.nsbm.ebookstore.user.review.model;
+package com.nsbm.ebookstore.user.review_service.model;
 
 import jakarta.persistence.*;
 import lombok.Data;

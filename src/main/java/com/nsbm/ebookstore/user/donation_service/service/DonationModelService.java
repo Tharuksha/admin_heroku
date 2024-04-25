@@ -1,6 +1,6 @@
-package com.nsbm.ebookstore.donation.service;
-import com.nsbm.ebookstore.donation.model.DonationModel;
-import com.nsbm.ebookstore.donation.repository.DonationModelRepository;
+package com.nsbm.ebookstore.user.donation_service.service;
+import com.nsbm.ebookstore.user.donation_service.model.DonationModel;
+import com.nsbm.ebookstore.user.donation_service.repository.DonationModelRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;

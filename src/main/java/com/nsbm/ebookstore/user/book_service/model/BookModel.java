@@ -1,4 +1,4 @@
-package com.nsbm.ebookstore.book_service.model;
+package com.nsbm.ebookstore.user.book_service.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

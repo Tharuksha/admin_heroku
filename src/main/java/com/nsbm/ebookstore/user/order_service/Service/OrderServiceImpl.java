@@ -1,7 +1,6 @@
-package com.nsbm.ebookstore.Service;
-
-import com.nsbm.ebookstore.Model.Order;
-import com.nsbm.ebookstore.Repository.OrderRepository;
+package com.nsbm.ebookstore.user.order_service.Service;
+import com.nsbm.ebookstore.user.order_service.Model.Order;
+import com.nsbm.ebookstore.user.order_service.Repository.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

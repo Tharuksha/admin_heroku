@@ -1,4 +1,4 @@
-package com.nsbm.ebookstore.donation.model;
+package com.nsbm.ebookstore.user.donation_service.model;
 
 
 import jakarta.persistence.Entity;
