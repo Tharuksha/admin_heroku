@@ -25,7 +25,7 @@ public class DonationModelService {
     }
 
     public DonationModel updateDonation(Long id, DonationModel donation) {
-        donation.setId(id);
+        donation.setDonationId(id);
         return donationModelRepository.save(donation);
     }
 
