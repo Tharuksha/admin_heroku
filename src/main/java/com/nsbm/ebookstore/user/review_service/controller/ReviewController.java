@@ -33,6 +33,11 @@ public class ReviewController {
         return reviewService.GetUsersByBookId(userid);
     }
 
+    @GetMapping("/comments/user/{userid}/{book_id}")
+    public List<ReviewModel>GetUserBookById(@PathVariable int userid,@PathVariable int book_id){
+        return reviewService.GetUserBookById(userid,book_id);
+    }
+
 
     //add comment
     @PostMapping("/addComment")
@@ -50,7 +55,7 @@ public class ReviewController {
 
     //update comment
     @PutMapping("/updateComment/{id}")
-    public  ResponseEntity<ReviewModel> updateComment(@PathVariable("id") Long id, @RequestBody String comment){
+    public  ResponseEntity<ReviewModel> updateComment(@PathVariable("id") Long id, @RequestBody ReviewModel comment){
         ReviewModel updatedReview = reviewService.updateComment(id, comment);
         return ResponseEntity.ok(updatedReview);
     }

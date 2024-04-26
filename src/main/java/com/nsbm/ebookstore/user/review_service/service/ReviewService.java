@@ -33,21 +33,25 @@ public class ReviewService {
 
     //update comments
 
-    public ReviewModel updateComment(Long id, String comment) {
+    public ReviewModel updateComment(Long id, ReviewModel comment) {
         ReviewModel reviewModel = reviewRepository.findById(id)
                 .orElseThrow(() -> new IllegalArgumentException("Invalid review id: " + id));
-        reviewModel.setComments(comment);
+        reviewModel.setComments(comment.getComments());
+        reviewModel.setRating(comment.getRating());
 
         return reviewRepository.save(reviewModel);
     }
 
-    //get all reviews for certain book id
-    public List<ReviewModel> GetReviewsByBookId(int book_id){
+    public List<ReviewModel> GetReviewsByBookId(long book_id){
         return reviewRepository.findCommentsByBookID(book_id);
     }
 
     //get all users for certain book id
-    public List<ReviewModel> GetUsersByBookId(int userid){
+    public List<ReviewModel> GetUsersByBookId(long userid){
         return reviewRepository.findUsersByBookID(userid);
     }
+
+    public List<ReviewModel>  GetUserBookById(long userid, long book_id){return  reviewRepository.findUserBookById(userid,book_id);}
+
+//    public List<UserModel> GetUserById(long userid){return reviewRepository.findUserById(userid);}
 }
