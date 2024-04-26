@@ -20,5 +20,4 @@ public class BookModel {
     private String publisher;
     private Date addedOn;
     private int quantity;
-    private String imgName;
 }
