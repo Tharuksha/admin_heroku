@@ -21,7 +21,7 @@ public class CourierController {
     public static class Constants {
         public static final String API_BASE = "/api/couriers";
         public static final String ID_PATH_VARIABLE = "id";
-        public static final String GET_ALL_COURIERS = "/";
+        public static final String GET_ALL_COURIERS = "/all";
         public static final String GET_COURIER_BY_ID = "/{id}";
         public static final String CREATE_COURIER = "/";
         public static final String UPDATE_COURIER = "/{id}";
