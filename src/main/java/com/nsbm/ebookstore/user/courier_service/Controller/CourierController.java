@@ -23,7 +23,7 @@ public class CourierController {
         public static final String ID_PATH_VARIABLE = "id";
         public static final String GET_ALL_COURIERS = "/all";
         public static final String GET_COURIER_BY_ID = "/{id}";
-        public static final String CREATE_COURIER = "/";
+        public static final String CREATE_COURIER = "/add";
         public static final String UPDATE_COURIER = "/{id}";
         public static final String DELETE_COURIER = "/{id}";
         public static final String COURIER_DELETED_MESSAGE = "Courier deleted successfully";
